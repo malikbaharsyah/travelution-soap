@@ -5,6 +5,9 @@ public class SubscriptionResp extends Response{
     public Integer subscriberId;
     public String status;
 
+    public SubscriptionResp() {
+        super();
+    }
     public SubscriptionResp(boolean success, String message, Integer subscriberId, String status) {
         super(success, message);
         this.subscriberId = subscriberId;

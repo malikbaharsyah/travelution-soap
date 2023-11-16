@@ -5,6 +5,9 @@ import java.util.List;
 public class SubscriptionListResp extends Response{
     public SubscriptionListWrapper list;
 
+    public SubscriptionListResp() {
+        super();
+    }
     public SubscriptionListResp(boolean success, String message, List<Subscriber> list) {
         super(success, message);
         this.list = new SubscriptionListWrapper(list);

@@ -5,6 +5,9 @@ public class ValidateSubscriptionResp extends Response{
     public Integer subscriberId;
     public Boolean subscribed;
 
+    public ValidateSubscriptionResp(){
+        super();
+    }
     public ValidateSubscriptionResp(boolean success, String message, Integer subscriberId, Boolean subscribed) {
         super(success, message);
         this.subscriberId = subscriberId;
